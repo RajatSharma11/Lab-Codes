@@ -74,7 +74,7 @@ int kthSmallest(int a[],int l,int r,int item)
 		}
 		if (i * 5 < total_items) //For last group with less than 5 elements
         {
-            median[i] = sort(a,l,total_items - 1); 
+            median[i] = sort(a,j,total_items - j); 
             i++;
         }    
 
