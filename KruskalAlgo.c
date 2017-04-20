@@ -1,3 +1,26 @@
+/****************************
+		Input format:
+
+First line : n (number of vertices of the graph)
+
+Second line : d1 (Number of neighbours of v1 whose vertex numbers are bigger than v1).
+
+Next d1 lines : vertex number of a higher numbered neighbour of v1 and the edge-weight of the corresponding edge (separated by a space). Assume the neighbors are given increasing order of vertex numbers. 
+
+Next line : d2 ((Number of neighbours of v2 whose vertex numbers are bigger than v2).
+
+Next d2 lines : vertex number of a higher numbered neighbour of v2 and the edge-weight of the corresponding edge (separated by a space). Assume the neighbors are given increasing order of vertex numbers.
+
+and so on.. 
+
+Output format:
+
+Print the edges of an MST along with the edge weights. If the graph is not connected, print a message indicating that.
+					**********************************/
+
+
+
+
 /** Kruskal Algorithm **/
 #include<stdio.h>
 #include<stdlib.h>
