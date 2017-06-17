@@ -1,5 +1,5 @@
 # Python 3.6
-
+# Board Size 4 X 4
 t = int(input())
 def isWord(s,a):
     #print(s,end = "  ")
@@ -53,3 +53,15 @@ while t > 0:
         print(ans[i].lower(),end = " ")
     print()
     t-=1
+    
+############################################################################################################################################
+# Sample Input
+# 1
+# 5 int num float string double
+# D O U B
+# A N M L
+# T O E F
+# I N L G
+
+# Sample output
+# double float int num
