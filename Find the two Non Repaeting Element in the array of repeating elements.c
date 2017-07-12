@@ -1,5 +1,12 @@
 // Approach: Using BitWise Operations (XOR)
 // Complexity : O(n)
+// Let x and y be the non-repeating elements we are looking for and arr[] be the input array. First calculate the XOR of all the array 
+// elements.
+// xor = arr[0]^arr[1]^arr[2].....arr[n-1]
+// All the bits that are set in xor will be set in one non-repeating element (x or y) and not in other. So if we take any set bit of 
+// xor and divide the elements of the array in two sets – one set of elements with same bit set and other set with same bit not set. 
+// By doing so, we will get x in one set and y in another set. Now if we do XOR of all the elements in first set, we will get first 
+// non-repeating element, and by doing same in other set we will get the second non-repeating element.
 
 #include<stdio.h>
 
@@ -48,3 +55,5 @@ ________________________________________________________________________________
 
 Alternate Approach :
 Use Sorting
+First sort all the elements. In the sorted array, by comparing adjacent elements we can easily get the non-repeating elements. 
+Time complexity of this method is O(nLogn)
